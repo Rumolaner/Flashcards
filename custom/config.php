@@ -11,10 +11,10 @@ $confAppName = "Saardolls - Flashcards";						//Der Name der Applikation
 
 //Datenbank
 $confUseDB = true;										//Wenn false wird keine Verbindung zur Datenbank aufgebaut. $mysql ist nicht existent
-$confDbHost = "localhost";
-$confDbUser = "rumolaner";
-$confDbDatabase = "flashcards";
-$confDbPwd = "G0galim012008";
+$confDbHost = "<dbhost>";
+$confDbUser = "<dbuser>";
+$confDbDatabase = "<dbname>";
+$confDbPwd = "<dbpwd>";
 
 //Templates
 $confTemplateDefaultset = "default";					//Standardwert für das Templateset
@@ -23,10 +23,10 @@ $confTemplateTagEnd = "}";								//Wie wird ein Platzhalter im Template abgesch
 
 //Email
 $confMailSendhtml = true;								//Sollen Email im HTML-Format versendet werden?
-$confMailFromAdresse = 'andreas.nawrath@rumolaner.de';			//Absenderadresse der Emails
-$confMailFromName = 'Andreas Nawrath';						//Absendername der Emails
-$confMailReplytoAdresse = 'andreas.nawrath@rumolaner.de';		//Reply to-Adresse der Emails^
-$confMailReplytoName = 'Andreas Nawrath';					//Reply to-Name der Emails
+$confMailFromAdresse = '<emailsenderadress>';			//Absenderadresse der Emails
+$confMailFromName = '<emailsendername>';						//Absendername der Emails
+$confMailReplytoAdresse = '<emailreplytoadress>';		//Reply to-Adresse der Emails^
+$confMailReplytoName = '<emailreplytoname>';					//Reply to-Name der Emails
 
 //Benutzer
 $confUserDefaultName = "Gast";							//Wie soll ein Besucher ohne Benutzeraccount genannt werden?
