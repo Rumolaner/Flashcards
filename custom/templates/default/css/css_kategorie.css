@@ -1,0 +1,110 @@
+
+/**
+{
+    border: 1px solid red;
+} */
+
+.btndel
+{
+    margin: 10px;
+    color: red;
+}
+
+.btnsave
+{
+    padding: 8px;
+    margin: 2px;
+}
+
+#title
+{
+    width: 900px;
+}
+
+#karten
+{
+    width: 64%;
+    min-width: 500px;
+    vertical-align: top;
+    background-color: rgba(230, 230, 230);
+    float: right;
+}
+
+#entries
+{
+    width: 98%;
+}
+
+.status
+{
+    padding-bottom: 5px;
+    margin: 2px;
+    font-size: 10px;
+    color: red;
+    font-style: italic;
+}
+
+.karte
+{
+
+    width: 98%;
+    border: 1px solid #000000;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+	padding-top: 10px;
+    margin-left: 2px;
+    margin-top: 0px;
+    margin-right: 2px;
+    margin-bottom: 15px;
+    min-width: 200px; 
+}
+
+.textbox
+{
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100px;
+}
+
+#kattree
+{
+    width: 35%;
+    min-width: 350px;
+    border-right:  rgba(0,0,0,);
+    border-right-style: dotted;
+}
+
+#dropKat
+{
+    border: #330033;
+    border-radius: 1.5em;
+    border-style: solid;
+    height: 35px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#aktKatdesc
+{
+    font-weight: bold;
+}
+
+.titlectrl
+{
+    height: 35px;
+    padding: 10px;
+    padding-left: 60px;
+}
+
+#trashbin
+{
+    float: left;
+}
+
+#titlectrl
+{
+}

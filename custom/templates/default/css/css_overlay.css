@@ -1,0 +1,92 @@
+#overlay
+{
+	background-color: rgba(0,0,0,0.5);
+	color: rgba(0,0,0);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+#overlay2
+{
+	background-color: rgba(0,0,0,0.5);
+	color: rgba(0,0,0);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10;
+}
+
+#oBackground
+{
+	background-color: #ffffff;
+	position: fixed;
+	height: 100px;
+	width: 300px;
+	left: 50%;
+	top: 50%;
+	z-index: 20; 
+	padding: 50px;
+	border: 6px double #000000;
+	border-radius: 75px;
+	text-align: center;
+	margin-left: -150px;
+	margin-top: -50px;
+}
+
+#oId
+{
+	display: none;
+}
+
+#oType
+{
+	display: none;
+}
+
+#oName
+{
+	float: left;
+	font-weight: bold;
+	width: 40%;
+	text-align: left;
+}
+
+#oValue
+{
+	width: 50%;
+}
+
+#oInfo
+{
+	clear: left;
+	width: 90%;
+	font-weight: bold;
+	text-align: left;
+	padding-top: 15px;
+}
+
+#oInfoValue
+{
+	width: 100%;
+	border: 1px solid #000000;
+}
+
+#oButton
+{
+	clear: left;
+}
+
+#oImage
+{
+	position: relative;
+	width: 100px;
+	height: 100px;
+	display: block;
+	margin: 0px auto;
+}

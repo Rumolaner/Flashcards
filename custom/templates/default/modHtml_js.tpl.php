@@ -1,0 +1,1 @@
+<script language="javascript" type="text/javascript" src="{tpl jspath}"></script>

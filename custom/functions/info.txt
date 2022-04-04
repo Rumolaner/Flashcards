@@ -1,0 +1,5 @@
+### In dieses Verzeichnis können Projekt-Individuelle Funktionen eingestellt werden, die dann im ganzen Projekt verwendet werden können
+### Die Namen dieser Funktionen sollten, um Kollisionen mit bestehenden Funktionen und Klassen zu vermeiden, mit diesem Präfix beginnen: "fcCust"
+### "fc" steht hier für Funktion, "Cust" für Custom
+### Beispiel: fcCustGetPrice
+### Die Klassen werden automatisch eingelesen und müssen nirgends registriert werden

@@ -1,0 +1,5 @@
+### In dieses Verzeichnis können Projekt-Individuelle Klassen eingestellt werden, die dann im ganzen Projekt verwendet werden können
+### Die Namen dieser Klassen sollten, um Kollisionen mit bestehenden Funktionen und Klassen zu vermeiden, mit diesem Präfix beginnen: "clsCust"
+### "cls" steht hier für Klasse, "Cust" für Custom
+### Beispiel: clsCustPrice
+### Die Klassen werden automatisch eingelesen und müssen nirgends registriert werden

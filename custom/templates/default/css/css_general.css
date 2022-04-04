@@ -1,0 +1,173 @@
+body
+{
+	position: relative;
+	background-color: #330033;
+	color: #EEEEEE;
+	font-family: 'Arial';
+	width: 99%;
+    min-width: 1000px;
+	height: auto;
+}
+
+main
+{
+	position: relative;
+	background-color: #33ccdd;
+	color: #333333;
+	padding: 15px;
+	width: 98%;
+	min-width: 600px;
+	height: auto;
+	overflow: hidden;
+}
+
+a
+{
+	color: #A9D0F5;
+}
+
+footer
+{
+	position: relative;
+	padding-top: 35px;
+}
+
+#form
+{
+	width: 100%;
+}
+
+.metadata
+{
+	width: 250px;
+	float: left;
+	padding-left: 25px;
+}
+
+.metadataClear
+{
+	clear: both;
+	width: 250px;
+	float: left;
+	padding-left: 25px;
+}
+
+.metavalue
+{
+	display: flex;
+	align-items:flex-start;
+}
+
+.metavalueForm
+{
+	display: flex;
+	align-items:flex-start;
+	color: #ff0000;
+}
+
+.metavalueFormSmall
+{
+	display: flex;
+	align-items:flex-start;
+	color: #ff0000;
+	font-size: 11px;
+}
+
+.metadatalist
+{
+	width: 225px;
+	float: left;
+	margin-left: 50px;
+	display: list-item;
+}
+
+.metadata_spacer
+{
+	width: 200px;
+	float: left;
+	padding-left: 5px;
+	padding-top: 25px;
+}
+
+.metavalue_spacer
+{
+	padding-top: 25px;
+	display: flex;
+	align-items:flex-start;
+}
+
+.metavalueForm_spacer
+{
+	padding-top: 25px;
+	display: flex;
+	align-items:flex-start;
+	color: #ff0000;
+}
+
+.metadata_spacerb
+{
+	width: 200px;
+	float: left;
+	padding-left: 10px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.metavalue_spacerb
+{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: flex;
+	align-items:flex-start;
+}
+
+.metavalueForm_spacerb
+{
+	padding-top: 25px;
+	padding-bottom: 25px;
+	display: flex;
+	color: #ff0000;
+}
+
+.desc_head
+{
+	padding-left: 25px;
+	font-weight: bold;
+	padding-top: 25px;
+}
+
+.desc_content
+{
+	padding-left: 25px;
+	padding-top: 25px;
+}
+
+.formfield
+{
+	width: 10%;
+	min-width: 120px;
+	margin-right: 10px;
+}
+
+.formfieldDesc
+{
+	width: 65%;
+	margin-right: 20px;
+}
+
+.formfieldSubmit
+{
+	width: 120px;
+	border: 1px solid #82285A;
+	border-radius: 10px;
+	color: #82285A;
+	background-color: #01DFD7;
+}
+
+.message
+{
+	background-color: #ffffff;
+	color: #ff0000;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
