@@ -8,7 +8,7 @@ class clsLanguages
 	private $tagEnd;
 	private $values;
 
-	function clsLanguages()
+	function __construct()
 	{
 		GLOBAL $confTemplateTagStart, $confTemplateTagEnd;
 

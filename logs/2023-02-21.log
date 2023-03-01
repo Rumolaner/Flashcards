@@ -1,0 +1,71 @@
+12:52:18 clsMysql - Keine Verbindung zur Datenbank möglich! () 
+12:56:42 clsMysql - Keine Verbindung zur Datenbank möglich! () 
+13:19:23 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:23 clsMysql - Parameter: i-
+13:19:23 clsMysql - Debug - Statement: SELECT COUNT(id) as anzahl FROM karte
+13:19:23 clsMysql - Debug - Statement: SELECT COUNT(id) as anzahl FROM kategorie
+13:19:23 clsMysql - Debug - Statement: SELECT COUNT(karte.id) as anzahl FROM benutzer2kategorie inner join kategorie on benutzer2kategorie.kategorie_id = kategorie.id inner join karte on kategorie.id = karte.kategorie_id left join benutzer2karte on benutzer2karte.karte_id = karte.id and benutzer2karte.benutzer_id = benutzer2kategorie.benutzer_id where benutzer2kategorie.benutzer_id = ? and (benutzer2karte.karte_id is null or convert(DATE_ADD(benutzer2karte.datum, INTERVAL benutzer2karte.fortschritt DAY), date) <= CURDATE())
+13:19:23 clsMysql - Parameter: i-
+13:19:23 clsMysql - Debug - Statement: SELECT COUNT(karte.id) as anzahl FROM benutzer2kategorie inner join kategorie on benutzer2kategorie.kategorie_id = kategorie.id inner join karte on kategorie.id = karte.kategorie_id left join benutzer2karte on benutzer2karte.karte_id = karte.id and benutzer2karte.benutzer_id = benutzer2kategorie.benutzer_id where benutzer2kategorie.benutzer_id = ? and (benutzer2karte.karte_id is null or convert(DATE_ADD(benutzer2karte.datum, INTERVAL benutzer2karte.fortschritt DAY), date) <= DATE_ADD(CURDATE(), INTERVAL 1 DAY))
+13:19:23 clsMysql - Parameter: i-
+13:19:23 clsMysql - Debug - Statement: SELECT COUNT(karte.id) as anzahl FROM benutzer2kategorie inner join kategorie on benutzer2kategorie.kategorie_id = kategorie.id inner join karte on kategorie.id = karte.kategorie_id left join benutzer2karte on benutzer2karte.karte_id = karte.id and benutzer2karte.benutzer_id = benutzer2kategorie.benutzer_id where benutzer2kategorie.benutzer_id = ? and (benutzer2karte.karte_id is null or convert(DATE_ADD(benutzer2karte.datum, INTERVAL benutzer2karte.fortschritt DAY), date) <= DATE_ADD(CURDATE(), INTERVAL 2 DAY))
+13:19:23 clsMysql - Parameter: i-
+13:19:23 clsMysql - Debug - Statement: SELECT COUNT(benutzer_id) as anzahl FROM fortschritt WHERE benutzer_id = ? AND YEAR(idate) = YEAR(CURDATE())
+13:19:23 clsMysql - Parameter: i-
+13:19:23 clsMysql - Debug - Statement: SELECT COUNT(benutzer_id) as anzahl FROM benutzer2karte where benutzer_id = ? and convert(datum, date) = CURDATE() and gewusst = 1
+13:19:23 clsMysql - Parameter: i-
+13:19:23 clsMysql - Debug - Statement: SELECT COUNT(benutzer_id) as anzahl FROM benutzer2karte where benutzer_id = ? and convert(datum, date) = CURDATE() and gewusst = 0
+13:19:23 clsMysql - Parameter: i-
+13:19:23 clsMysql - Debug - Statement: SELECT COUNT(id) as anzahl FROM karte where todo = 1
+13:19:23 clsMysql - Debug - Statement: SELECT benutzer2karte.fortschritt, count(karte.id) as anzahl, count(IF ((benutzer2karte.karte_id is null or convert(DATE_ADD(benutzer2karte.datum, INTERVAL benutzer2karte.fortschritt DAY), date) <= CURDATE()), karte.id, null)) as todo, count(IF(convert(benutzer2karte.datum, date)  = CURDATE() and benutzer2karte.gewusst = 1, karte.id, null)) as gewusst, count(IF(convert(benutzer2karte.datum, date)  = CURDATE() and benutzer2karte.gewusst = 0, karte.id, null)) as nichtgewusst FROM kategorie inner join karte on kategorie.id = karte.kategorie_id LEFT JOIN benutzer2karte on karte.id = benutzer2karte.karte_id and benutzer2karte.benutzer_id = ? GROUP BY benutzer2karte.fortschritt ORDER BY benutzer2karte.fortschritt
+13:19:23 clsMysql - Parameter: i-
+13:19:23 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:23 clsMysql - Parameter: i-
+13:19:23 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:23 clsMysql - Parameter: i-
+13:19:23 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:23 clsMysql - Parameter: i-
+13:19:23 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:23 clsMysql - Parameter: i-
+13:19:27 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:27 clsMysql - Parameter: i-
+13:19:27 clsMysql - Debug - Statement: SELECT id, name FROM benutzer order by name
+13:19:27 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:27 clsMysql - Parameter: i-
+13:19:27 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:27 clsMysql - Parameter: i-
+13:19:27 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:27 clsMysql - Parameter: i-
+13:19:27 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:27 clsMysql - Parameter: i-
+13:19:30 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:30 clsMysql - Parameter: i-
+13:19:30 clsMysql - Debug - Statement: SELECT count(name) as anzahl, id FROM benutzer WHERE id = ?
+13:19:30 clsMysql - Parameter: i-1
+13:19:30 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:30 clsMysql - Parameter: i-1
+13:19:30 clsMysql - Debug - Statement: SELECT COUNT(id) as anzahl FROM karte
+13:19:30 clsMysql - Debug - Statement: SELECT COUNT(id) as anzahl FROM kategorie
+13:19:30 clsMysql - Debug - Statement: SELECT COUNT(karte.id) as anzahl FROM benutzer2kategorie inner join kategorie on benutzer2kategorie.kategorie_id = kategorie.id inner join karte on kategorie.id = karte.kategorie_id left join benutzer2karte on benutzer2karte.karte_id = karte.id and benutzer2karte.benutzer_id = benutzer2kategorie.benutzer_id where benutzer2kategorie.benutzer_id = ? and (benutzer2karte.karte_id is null or convert(DATE_ADD(benutzer2karte.datum, INTERVAL benutzer2karte.fortschritt DAY), date) <= CURDATE())
+13:19:30 clsMysql - Parameter: i-1
+13:19:30 clsMysql - Debug - Statement: SELECT COUNT(karte.id) as anzahl FROM benutzer2kategorie inner join kategorie on benutzer2kategorie.kategorie_id = kategorie.id inner join karte on kategorie.id = karte.kategorie_id left join benutzer2karte on benutzer2karte.karte_id = karte.id and benutzer2karte.benutzer_id = benutzer2kategorie.benutzer_id where benutzer2kategorie.benutzer_id = ? and (benutzer2karte.karte_id is null or convert(DATE_ADD(benutzer2karte.datum, INTERVAL benutzer2karte.fortschritt DAY), date) <= DATE_ADD(CURDATE(), INTERVAL 1 DAY))
+13:19:30 clsMysql - Parameter: i-1
+13:19:30 clsMysql - Debug - Statement: SELECT COUNT(karte.id) as anzahl FROM benutzer2kategorie inner join kategorie on benutzer2kategorie.kategorie_id = kategorie.id inner join karte on kategorie.id = karte.kategorie_id left join benutzer2karte on benutzer2karte.karte_id = karte.id and benutzer2karte.benutzer_id = benutzer2kategorie.benutzer_id where benutzer2kategorie.benutzer_id = ? and (benutzer2karte.karte_id is null or convert(DATE_ADD(benutzer2karte.datum, INTERVAL benutzer2karte.fortschritt DAY), date) <= DATE_ADD(CURDATE(), INTERVAL 2 DAY))
+13:19:30 clsMysql - Parameter: i-1
+13:19:30 clsMysql - Debug - Statement: SELECT COUNT(benutzer_id) as anzahl FROM fortschritt WHERE benutzer_id = ? AND YEAR(idate) = YEAR(CURDATE())
+13:19:30 clsMysql - Parameter: i-1
+13:19:30 clsMysql - Debug - Statement: SELECT COUNT(benutzer_id) as anzahl FROM benutzer2karte where benutzer_id = ? and convert(datum, date) = CURDATE() and gewusst = 1
+13:19:30 clsMysql - Parameter: i-1
+13:19:30 clsMysql - Debug - Statement: SELECT COUNT(benutzer_id) as anzahl FROM benutzer2karte where benutzer_id = ? and convert(datum, date) = CURDATE() and gewusst = 0
+13:19:30 clsMysql - Parameter: i-1
+13:19:30 clsMysql - Debug - Statement: SELECT COUNT(id) as anzahl FROM karte where todo = 1
+13:19:30 clsMysql - Debug - Statement: SELECT benutzer2karte.fortschritt, count(karte.id) as anzahl, count(IF ((benutzer2karte.karte_id is null or convert(DATE_ADD(benutzer2karte.datum, INTERVAL benutzer2karte.fortschritt DAY), date) <= CURDATE()), karte.id, null)) as todo, count(IF(convert(benutzer2karte.datum, date)  = CURDATE() and benutzer2karte.gewusst = 1, karte.id, null)) as gewusst, count(IF(convert(benutzer2karte.datum, date)  = CURDATE() and benutzer2karte.gewusst = 0, karte.id, null)) as nichtgewusst FROM kategorie inner join karte on kategorie.id = karte.kategorie_id LEFT JOIN benutzer2karte on karte.id = benutzer2karte.karte_id and benutzer2karte.benutzer_id = ? GROUP BY benutzer2karte.fortschritt ORDER BY benutzer2karte.fortschritt
+13:19:30 clsMysql - Parameter: i-1
+13:19:30 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:30 clsMysql - Parameter: i-
+13:19:30 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:30 clsMysql - Parameter: i-
+13:19:30 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:30 clsMysql - Parameter: i-
+13:19:30 clsMysql - Debug - Statement: SELECT id, name, idate FROM benutzer where id = ?
+13:19:30 clsMysql - Parameter: i-

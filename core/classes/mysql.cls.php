@@ -9,7 +9,7 @@ class clsMysql
 	private $mysqli;
 	private $affectedrows;
 
-	function clsMysql()
+	function __construct()
 	{
 		GLOBAL $confDbHost, $confDbDatabase, $confDbUser, $confDbPwd;
 

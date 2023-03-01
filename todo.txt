@@ -1,0 +1,2 @@
+  - Sets für Lernkategorien
+  - Protokoll-DB, damit "Beantwortet dieses Jahr" angezeigt werden kann (In der aktuell verwendeten Tabelle werden Karte-Nutzer-Keys überschrieben)

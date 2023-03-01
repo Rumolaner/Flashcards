@@ -36,6 +36,7 @@ $tpl->setValue("offeneUebermorgen", $this->lang->get("main", "offenUebermorgen")
 $tpl->setValue("gewusst", $this->lang->get("main", "gewusst"));
 $tpl->setValue("nichtgewusst", $this->lang->get("main", "nichtgewusst"));
 $tpl->setValue("todo", $this->lang->get("main", "todo"));
+$tpl->setValue("beantwortetDiesesJahr", $this->lang->get("main", "beantwortetDiesesJahr"));
 
 $kartenValue = "";
 $inkategorienValue = "";
@@ -90,6 +91,16 @@ if ($res->num_rows > 0)
 }
 
 $pars[0] = $this->user->getId();
+$res = $this->sql->get("SELECT COUNT(benutzer_id) as anzahl FROM fortschritt WHERE benutzer_id = ? AND YEAR(idate) = YEAR(CURDATE())", "i", $pars);
+if ($res->num_rows > 0)
+{
+    while($row = $res->fetch_array(MYSQLI_ASSOC))
+    {
+        $beantwortetDiesesJahrValue = $row['anzahl'];
+    }
+}
+
+$pars[0] = $this->user->getId();
 $res = $this->sql->get("SELECT COUNT(benutzer_id) as anzahl FROM benutzer2karte where benutzer_id = ? and convert(datum, date) = CURDATE() and gewusst = 1", "i", $pars);
 if ($res->num_rows > 0)
 {
@@ -126,6 +137,7 @@ $tpl->setValue("offeneUebermorgenValue", $offenUebermorgenValue);
 $tpl->setValue("gewusstValue", $gewusstValue);
 $tpl->setValue("nichtgewusstValue", $nichtgewusstValue);
 $tpl->setValue("todoValue", $todoValue);
+$tpl->setValue("beantwortetDiesesJahrValue", $beantwortetDiesesJahrValue);
 
 $headRow = "<tr><th></th>";
 $sumRow = "<tr><th>".$this->lang->get("lernen", "karten")."</th>";

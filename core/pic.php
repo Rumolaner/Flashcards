@@ -11,6 +11,7 @@ include_once 'core/functions/log.func.php';
 include_once 'core/classes/parameter.cls.php';
 include_once('core/classes/user.cls.php');
 include_once('core/classes/template.cls.php');
+include_once('core/classes/mysql.cls.php');
 
 //Custom-Funktionen einbinden
 $verzeichnis=opendir ("custom/functions");

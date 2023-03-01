@@ -8,7 +8,7 @@ class clsTemplate
 	private $tagEnd;
 	private $values;
 
-	function clsTemplate($template, $templateset = "")
+	function __construct($template, $templateset = "")
 	{
 		GLOBAL $confTemplateDefaultset, $confTemplateTagStart, $confTemplateTagEnd;
 

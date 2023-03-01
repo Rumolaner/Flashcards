@@ -75,6 +75,11 @@
 			<code5003>Ein Fehler ist aufgetreten, der Hinweis konnte nicht geladen werden</code5003>
 			<code5004>Die ToDo-Markierung wurde gesetzt</code5004>
 			<code5005>Ein Fehler ist aufgetreten, die ToDo-Markierung konnte nicht gesetzt werden. Möglicherweise ist diese Frage schon markiert</code5005>
+			<code6000>Es wurde kein Name für das Set angegeben</code6000>
+			<code6001>Ein Fehler ist aufgetreten! Das Set konnte nicht gespeichert werden</code6001>
+			<code6002>Das Set wurde erfolgreich gespeichert</code6002>
+			<code6005>Ein Fehler ist aufgetreten. Das Set konnte nicht geladen werden</code6005>
+			<code6006>Das Set wurde erfolgreich geladen</code6006>
 		</message>
 		<mail>
 			<register_subject>Registrierung bei seianimali - All you can eat</register_subject>
@@ -146,6 +151,7 @@
 			<statistiken>Statistiken</statistiken>
 			<neu>Neu</neu>
 			<todo>ToDo - Fragen zu bearbeiten</todo>
+                        <beantwortetDiesesJahr>Beantwortet dieses Jahr</beantwortetDiesesJahr>
 		</main>
 		<login>
 			<title>Flashcards - Anmeldung</title>
@@ -175,6 +181,8 @@
 			<neu>Neu</neu>
 			<kategorie>Kategorie</kategorie>
 			<hinweis>Hinweis</hinweis>
+			<loadSet>Set laden</loadSet>
+			<setname>Setname</setname>
 		</lernen>
 		<todo>
 			<title>ToDo - Zu bearbeitende Karten</title>

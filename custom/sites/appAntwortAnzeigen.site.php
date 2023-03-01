@@ -11,16 +11,16 @@ $res = $this->sql->get("SELECT antwort FROM karte WHERE id = ?", "i", $par);
 
 if ($res->num_rows > 0)
 {
-	while($row = $res->fetch_array(MYSQLI_ASSOC))
-	{
+    while($row = $res->fetch_array(MYSQLI_ASSOC))
+    {
         $retCode = "5001";
-		$antwort = nl2br($row['antwort']);
+	$antwort = nl2br($row['antwort']);
     }
 }
 
 if ($antwort == "")
 {
-	$antwort = " ";
+    $antwort = " ";
 }
 
 $tpl->setValue("code", $retCode);

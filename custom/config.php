@@ -11,10 +11,10 @@ $confAppName = "Saardolls - Flashcards";						//Der Name der Applikation
 
 //Datenbank
 $confUseDB = true;										//Wenn false wird keine Verbindung zur Datenbank aufgebaut. $mysql ist nicht existent
-$confDbHost = "<dbhost>";
-$confDbUser = "<dbuser>";
-$confDbDatabase = "<db>";
-$confDbPwd = "<dbpwd>";
+$confDbHost = "localhost";
+$confDbUser = "rumolaner";
+$confDbDatabase = "flashcards";
+$confDbPwd = "G0galim012008";
 
 //Templates
 $confTemplateDefaultset = "default";					//Standardwert für das Templateset
@@ -23,10 +23,10 @@ $confTemplateTagEnd = "}";								//Wie wird ein Platzhalter im Template abgesch
 
 //Email
 $confMailSendhtml = true;								//Sollen Email im HTML-Format versendet werden?
-$confMailFromAdresse = '<mailsenderadress>';			//Absenderadresse der Emails
-$confMailFromName = '<mailsendername>';						//Absendername der Emails
-$confMailReplytoAdresse = '<mailreplytoadress>';		//Reply to-Adresse der Emails^
-$confMailReplytoName = '<mailreplytoname>';					//Reply to-Name der Emails
+$confMailFromAdresse = 'andreas.nawrath@rumolaner.de';			//Absenderadresse der Emails
+$confMailFromName = 'Andreas Nawrath';						//Absendername der Emails
+$confMailReplytoAdresse = 'andreas.nawrath@rumolaner.de';		//Reply to-Adresse der Emails^
+$confMailReplytoName = 'Andreas Nawrath';					//Reply to-Name der Emails
 
 //Benutzer
 $confUserDefaultName = "Gast";							//Wie soll ein Besucher ohne Benutzeraccount genannt werden?
@@ -42,7 +42,7 @@ $confLangDefault = "deutsch";							//Welche Sprache bekommen neue Besucher ange
 $confAction['default']['Empty'] = "webMain";			//Default-Seite, wenn keine Action angegeben wird
 $confAction['default']['NoFile'] = "webMain";			//Default-Seite, wenn eine nicht existierende Action angegeben wird
 $confAction['default']['NoAuthGuest'] = "webLogin";		//Default-Seite, wenn der Benutzer keine Berechtigung für die Seite hat, und auch nicht als Benutzer registriert ist
-$confAction['default']['NoAuthUser'] = "webNoaccess";		//Default-Seite, wenn der Benutzer keine Berechtigung für die Seite hat, aber als Benutzer registriert ist
+$confAction['default']['NoAuthUser'] = "webMain";		//Default-Seite, wenn der Benutzer keine Berechtigung für die Seite hat, aber als Benutzer registriert ist
 
 $confAction['app']['Empty'] = "appEmpty";				//Default-Seite, wenn keine Action angegeben wird
 $confAction['app']['NoFile'] = "appEmpty";				//Default-Seite, wenn eine nicht existierende Action angegeben wird

@@ -13,6 +13,7 @@
         <tr><th>{tpl offeneUebermorgen}:</th><td>{tpl offeneUebermorgenValue}</td><tr>
         <tr><th>{tpl gewusst}:</th><td>{tpl gewusstValue}</td><tr>
         <tr><th>{tpl nichtgewusst}:</th><td>{tpl nichtgewusstValue}</td><tr>
+        <tr><th>{tpl beantwortetDiesesJahr}:</th><td>{tpl beantwortetDiesesJahrValue}</td><tr>
         <tr><th>{tpl todo}:</th><td>{tpl todoValue}</td><tr>
     </table>
 </div>

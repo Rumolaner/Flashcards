@@ -8,7 +8,7 @@ class clsAction
 	private $sql;
 	private $msgStack;
 	
-	function clsAction()
+	function __construct()
 	{
 		GLOBAL $params, $user, $lang, $sql;
 		

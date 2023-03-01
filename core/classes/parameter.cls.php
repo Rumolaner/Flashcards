@@ -7,7 +7,7 @@ class clsParameter
 	private $cookie;
 	private $session;
 
-	function clsParameter($post, $get, $cookie, $session)
+	function __construct($post, $get, $cookie, $session)
 	{
 		$this->post = $post;
 		$this->get = $get;

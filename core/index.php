@@ -25,7 +25,7 @@ include_once 'core/functions/link.func.php';
 include_once 'core/functions/piclink.func.php';
 include_once 'core/functions/csslink.func.php';
 include_once 'core/functions/jslink.func.php';
-include_once 'core/functions/email.func.php';
+//include_once 'core/functions/email.func.php';
 include_once 'core/functions/pwd.func.php';
 include_once 'core/functions/authorisation.func.php';
 

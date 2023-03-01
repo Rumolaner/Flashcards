@@ -22,5 +22,7 @@ $confSitesUser[] = 'appAntwortAnzeigen';
 $confSitesUser[] = 'appAntworten';
 $confSitesUser[] = 'appHinweis';
 $confSitesUser[] = 'appTodo';
+$confSitesUser[] = 'appBenutzerSet';
+$confSitesUser[] = 'appLoadBenutzerSet';
 
 ?>
